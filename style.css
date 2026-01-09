@@ -706,10 +706,7 @@ img {
         padding-top: 40px;
     }
 
-    .hero-content {
-        order: 1;
-        /* Image first? No, Title first usually better for SEO/UX, but let's stick to title top */
-    }
+ 
 
     .hero-image-wrapper {
         justify-content: center;

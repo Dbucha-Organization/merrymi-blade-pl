@@ -100,3 +100,21 @@ const yearSpan = document.querySelector('#year');
 if (yearSpan) {
     yearSpan.innerText = new Date().getFullYear();
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const timers = document.querySelectorAll(".timer");
+
+    timers.forEach(timer => {
+        const daysAgo = parseInt(timer.dataset.daysAgo, 10);
+        const date = new Date();
+        date.setDate(date.getDate() - daysAgo);
+
+        const formattedDate = date.toLocaleDateString("pl-PL", {
+            day: "numeric",
+            month: "numeric",
+            year: "numeric"
+        });
+
+        timer.textContent = formattedDate;
+    });
+});
