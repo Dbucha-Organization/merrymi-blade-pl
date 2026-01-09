@@ -102,16 +102,17 @@ if (yearSpan) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const timers = document.querySelectorAll(".timer");
+    const timers = document.querySelectorAll("#timer");
 
     timers.forEach(timer => {
         const daysAgo = parseInt(timer.dataset.daysAgo, 10);
         const date = new Date();
         date.setDate(date.getDate() - daysAgo);
 
+        // Use 2-digit day and month to ensure leading zeros when needed
         const formattedDate = date.toLocaleDateString("pl-PL", {
-            day: "numeric",
-            month: "numeric",
+            day: "2-digit",
+            month: "2-digit",
             year: "numeric"
         });
 
