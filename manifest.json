@@ -1,0 +1,34 @@
+{
+  "name": "MerryMi Blade – Jednorazowe e-papierosy 30K",
+  "short_name": "MerryMi Blade",
+  "description": "MerryMi Blade 30K – jednorazowe e-papierosy. Opis serii, smaki oraz podstawowe informacje techniczne.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#1a1a1a",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/favicon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["shopping", "lifestyle"],
+  "screenshots": [
+    {
+      "src": "/images/merrymi-jednarazowki-dbucha-polska-logo.avif",
+      "sizes": "540x720",
+      "type": "image/avif",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/images/merrymi-jednarazowki-dbucha-polska-logo.avif",
+      "sizes": "1280x720",
+      "type": "image/avif",
+      "form_factor": "wide"
+    }
+  ]
+}
